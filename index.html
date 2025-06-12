@@ -33,7 +33,6 @@
     <link rel="stylesheet" href="https://lidrekon.ru/slep/css/special.min.css">
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
     <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
 </head>
 <body>
   <div class="preloader"></div>
@@ -693,47 +692,6 @@
     <script src="js/jquery.min.js"></script>
     <!-- Скрипт слабовидящих -->
     <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
-    <!-- Ручная инициализация -->
-    <script>
-    let idx;
-    let pages;
-
-    fetch('search-index.json')
-        .then(response => response.json())
-        .then(data => {
-        pages = data;
-        idx = lunr(function () {
-            this.ref('id');
-            this.field('title');
-            this.field('content');
-
-            data.forEach(doc => {
-            this.add(doc);
-            });
-        });
-        });
-
-    document.getElementById('searchBox').addEventListener('input', function () {
-        const query = this.value.trim();
-        const resultsList = document.getElementById('results');
-        resultsList.innerHTML = '';
-
-        if (!query || !idx) return;
-
-        const results = idx.search(query);
-
-        if (results.length === 0) {
-        resultsList.innerHTML = '<li>Ничего не найдено</li>';
-        return;
-        }
-
-        results.forEach(result => {
-        const page = pages.find(p => p.id === result.ref);
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${page.url}">${page.title}</a>`;
-        resultsList.appendChild(li);
-        });
-    });
     <!-- === bootsrap-min === -->
     <script src="js/bootstrap.min.js"></script>
     <!-- === Scroll up min js === -->
