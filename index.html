@@ -208,7 +208,13 @@
                    </li>
                    
                    <li class="fc-sky hav-sub"><a href="contact.html">КОНТАКТЫ</a></li>
-                        <input type="text" id="searchBox" placeholder="Поиск по сайту..." /><ul id="results"></ul>
+                    <div id="search"></div>
+                    <script src="/pagefind/pagefind.js"></script>
+                    <script>
+                    window.addEventListener('DOMContentLoaded', () => {
+                        new PagefindUI({ element: "#search" });
+                    });
+                    </script>
                    
 
                 </ul>
