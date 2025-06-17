@@ -33,13 +33,7 @@
     <link rel="stylesheet" href="https://lidrekon.ru/slep/css/special.min.css">
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
     <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.specialButtonClone').on('click', function() {
-                $('.specialButton').not(this).first().click();
-            });
-        });
-    </script>
+    
 </head>
 <body>
   <div class="preloader"></div>
@@ -732,7 +726,13 @@
  </footer>
   <!--Footer area end-->
  
- 
+    <script>
+        $(document).ready(function() {
+            $('.specialButtonClone').on('click', function() {
+                $('.specialButton').not(this).first().click();
+            });
+        });
+    </script>
 
 
     <!-- === jqyery === -->
