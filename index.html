@@ -36,7 +36,7 @@
     <script>
         $(document).ready(function() {
             $('.specialButtonClone').on('click', function() {
-                $('#specialButton').click(); // симулируем клик на оригинальной кнопке
+                $('.specialButton').not(this).first().click();
             });
         });
     </script>
@@ -149,7 +149,7 @@
                         <p>Местоположение</p>
                         <p class="con-text">Самарская обл., г.Тольятти, Лесопарковое шоссе, 36</p>
                     </div>
-                    <img class="specialButtonClone" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
+                    <img class="specialButton  specialButtonClone" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
                 </div>
         </div>
     </div>
