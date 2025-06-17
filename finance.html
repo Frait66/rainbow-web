@@ -31,6 +31,13 @@
     <link href="css/responsive.css" rel="stylesheet">
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
     <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.specialButtonClone').on('click', function() {
+                $('#specialButton').click(); // симулируем клик на оригинальной кнопке
+            });
+        });
+    </script>
     
 </head>
 
@@ -142,7 +149,7 @@
                         <p>Местоположение</p>
                         <p class="con-text">Самарская обл., г.Тольятти, Лесопарковое шоссе, 36</p>
                     </div>
-                    <img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
+                    <img class="specialButtonClone" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
                 </div>
         </div>
     </div>
