@@ -31,18 +31,24 @@
     <link href="css/responsive.css" rel="stylesheet">
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
     <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.specialButtonClone').on('click', function() {
-                $('#specialButton').click(); // симулируем клик на оригинальной кнопке
-            });
-        });
-    </script>
     
 </head>
 
 <body>
   <div class="preloader"></div>
+  <img id="specialButton"
+     src="https://lidrekon.ru/images/special.png"
+     alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ"
+     title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ"
+     style="
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 9999;
+        cursor: pointer;
+        width: 50px;
+        height: auto;
+     " />
  <!--Logo and contact info area Start -->
 
  <div class="logo-area-style-two" data-pagefind-ignore>
@@ -55,7 +61,6 @@
                     </a>
                 </div>
              <div class="accordion-wrapper hide-sm-up">
-            <img class="specialButtonClone" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
             <a href="#" class="mobile-open">≡</a> 
             
 
@@ -151,7 +156,6 @@
                         <p>Местоположение</p>
                         <p class="con-text">Самарская обл., г.Тольятти, Лесопарковое шоссе, 36</p>
                     </div>
-                    <img id="specialButton" style="cursor:pointer;" src="https://lidrekon.ru/images/special.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
                 </div>
         </div>
     </div>
