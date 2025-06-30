@@ -125,7 +125,7 @@
 
         $('.testimonial-carousel').owlCarousel({
             loop: true,
-            nav: false,
+            nav: true,
             autoplay: true,
             navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
             dots: false,
