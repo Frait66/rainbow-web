@@ -2073,12 +2073,6 @@ th,.table-time{color: #333333;font-family: 'Roboto';background-color: #fff}
 .logo-area-style-two {
 	padding: 15px 0px;
 }
-
-@media (max-width: 768px) {
-	.logo-area-style-two {
-		padding-top: 0px;
-	}
-}
 .logo-area-style-two .kids-care-btn {
 	float: right;
 	margin-top: 25px;
