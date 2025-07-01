@@ -2052,18 +2052,19 @@ th,.table-time{color: #333333;font-family: 'Roboto';background-color: #fff}
 	display: block;
 	float: right;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1492px) {
+	.contact-area-two {
+		padding-top: 60px;
+	}
+}
+@media (max-width: 1200px) {
 	.contact-area-two {
 		padding-top: 20px;
-		display: block;
-		float: right;
 	}
 }
 @media (max-width: 768px) {
 	.contact-area-two {
 		padding-top: 0px;
-		display: block;
-		float: right;
 	}
 }
 .top-bar.style-two span {
@@ -2071,6 +2072,12 @@ th,.table-time{color: #333333;font-family: 'Roboto';background-color: #fff}
 }
 .logo-area-style-two {
 	padding: 15px 0px;
+}
+
+@media (max-width: 768px) {
+	.logo-area-style-two {
+		padding-top: 0px;
+	}
 }
 .logo-area-style-two .kids-care-btn {
 	float: right;
