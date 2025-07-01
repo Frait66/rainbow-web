@@ -39,14 +39,11 @@
 /* Адаптация для маленьких экранов */
 @media (max-width: 767px) {
     #specialButton {
-		position: absolute;
+		position: relative;
         width: 40px;
-        top: 107px;
+        top: 60px;
         left: 10px;
-    }
-    
-    .mobile-open {
-        margin-left: 50px;
+		z-index: 9999;
     }
 }
 /* Контейнер для поиска вверху страницы */
