@@ -733,27 +733,29 @@ padding-bottom: 5px;
 .mega-img img {border-radius: 5px;
 }
 .mega-menu {
-	position: absolute;
-	top: 103px;
-	left: 0;
-	background: #fff;
-	z-index: 999999;
-	width: 750px;
-	-webkit-box-shadow: 0px 20px 20px 0px rgba(80, 100, 126, 0.4);
-	box-shadow: 0px 20px 20px 0px rgba(80, 100, 126, 0.4);
-	border-top: 2px solid red;
-	padding: 10px 25px 30px;
-	padding-left: 31px;
-	opacity: 0;
-	visibility: hidden;
+    position: absolute;
+    top: 103px;
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Сдвиг на половину ширины */
+    background: #fff;
+    z-index: 999999;
+    width: 750px;
+    box-shadow: 0px 20px 20px 0px rgba(80, 100, 126, 0.4);
+    border-top: 2px solid red;
+    padding: 10px 25px 30px;
+    opacity: 0;
+    visibility: hidden;
+    margin-left: 0; /* Убираем старый отступ */
 }
-.mega-menu.mm-two {left: -250px;}
+.mega-menu.mm-two {
+	left: 50%; /* Центрирование вместо смещения */
+    transform: translateX(-50%);
+}
 .mainmenu li:hover .mega-menu {
-	visibility: visible;
-	top: 79px;
-	opacity: 1;
-	-webkit-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
+    visibility: visible;
+    top: 79px;
+    opacity: 1;
+    transition: all 0.3s ease 0s;
 }
 .mainmenu .mega-button a {
 	font-family: 'Roboto';
@@ -787,6 +789,15 @@ padding-bottom: 5px;
 	text-align: center;
 	padding: 6px;
 	padding-top: 12px;
+}
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .mega-menu {
+        width: 90vw; /* Ширина относительно окна */
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px 15px;
+    }
 }
 /*-----Slider css start -----------*/
 
