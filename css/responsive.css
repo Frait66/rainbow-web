@@ -204,8 +204,8 @@
         padding: 28px 8px;
         font-size: 16px;
     }
-    .mega-menu.mm-two {left: -379px;}
-    .mega-menu {left: -147px;}
+    .mega-menu.mm-two {left: 4px;}
+    .mega-menu {left: 4px;}
     .top-contact-btn {margin-left: 20px;}
     .bg-1,
     .bg-2,.bg-3 {
@@ -608,7 +608,7 @@
 	left: -230px;
     }
     .mega-menu.mega-menu-three {
-	left: -145px;
+	left: 4px;
 }
     .logo {
         padding-top: 15px;
